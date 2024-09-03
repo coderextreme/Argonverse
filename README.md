@@ -2,6 +2,8 @@
 
 Meta server for JSONverse servers
 
+Start this before starting any JSONverse servers.
+
 To install:
 
 Install Node.js.

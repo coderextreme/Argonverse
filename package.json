@@ -1,0 +1,16 @@
+{
+	"name": "Argonverse",
+	"version": "0.0.1",
+	"description": "Meta server for JSONVerse",
+	"main": "app.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/coderextreme/Argonverse.git"
+	},
+	"dependencies": {
+		"express": "*"
+	},
+	"scripts": {
+		"start": "node app.js"
+	}
+}

@@ -1,5 +1,5 @@
-var metaServer = 'http://localhost:3000';
-var Client = require('node-rest-client-patched').Client;
+var metaServer = process.env.METASERVER || 'http://localhost:8090';
+var Client = require('node-rest-client').Client;
 var client = new Client();
 
 var tests = [

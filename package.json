@@ -10,8 +10,13 @@
 	"dependencies": {
 		"express": "*"
 	},
-	"devDependencies": {
-		"node-rest-client": "*"
+       "devDependencies": {
+		"node-rest-client-patched": "*"
+	},
+	"overrides": {
+	    "express": {
+		"path-to-regexp": "0.1.10"
+	    }
 	},
 	"scripts": {
 		"start": "node app.js"

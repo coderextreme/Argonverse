@@ -50,7 +50,7 @@ var pi = metaServer.lastIndexOf(":");
 var defaultPort = metaServer.substr(pi+1) || process.env.PORT || 8090 ;
 
 http.listen(defaultPort);
-console.log('express server started on port %s', defaultPort);
+console.log('express server started on port http://[::1]:%s', defaultPort);
 
 http.on('error', function (e) {
   if (e.code == 'EADDRINUSE') {

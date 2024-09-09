@@ -45,13 +45,17 @@ router.route('/servers/:host/:port/:players')
 	});
 app.use('/api', router);
 
-var defaultPort = 8090;
-http.listen(process.env.PORT || defaultPort);
+var metaServer = process.env.METASERVER || "http://localhost:8090";
+var pi = metaServer.lastIndexOf(":");
+var defaultPort = metaServer.substr(pi+1) || process.env.PORT || 8090 ;
 
-console.log('express server started on port %s', process.env.PORT || defaultPort);
+http.listen(defaultPort);
+console.log('express server started on port %s', defaultPort);
 
 http.on('error', function (e) {
   if (e.code == 'EADDRINUSE') {
     console.error('Address in use, exiting...');
+  } else {
+    console.error('ERROR: ', e);
   }
 });

@@ -12,5 +12,6 @@ Install git.
 ```
 git clone https://github.com/coderextreme/monastery
 npm install
+export METASERVER="http://localhost:8090"
 node app.js
 ```

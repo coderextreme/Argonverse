@@ -8,10 +8,11 @@
 		"url": "git://github.com/coderextreme/Argonverse.git"
 	},
 	"dependencies": {
-		"express": "*"
+		"express": "*",
+    		"debug": "4.4.1"
 	},
        "devDependencies": {
-		"node-rest-client-patched": "*"
+		"node-rest-client": "*"
 	},
 	"scripts": {
 		"start": "node app.js"

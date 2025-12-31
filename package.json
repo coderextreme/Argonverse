@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"express": "*",
-    		"debug": "4.4.1"
+    		"debug": "4.4.3"
 	},
        "devDependencies": {
 		"node-rest-client": "*"
